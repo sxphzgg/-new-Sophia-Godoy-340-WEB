@@ -23,20 +23,20 @@ p {
 
 img {
   width: 400px;
-  border: 5px solid rgb(227, 195, 13);
-  border-radius: 45px;
+  border: 10px solid rgb(255, 220, 20);
+  border-radius: 50px;
 }
 
 li {
-  color: rgb(211, 107, 62);
-  margin: 10px;
+  color: rgb(251, 250, 249);
+  margin: 15px;
 }
 
 div {
-    border: 3px solid rgb(11, 175, 112);
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: rgb(255, 240, 248);
+    border: 9px solid rgb(123, 3, 41);
+    margin-bottom: 30px;
+    padding: 60px;
+    background-color: rgb(255, 148, 205);
 }
 
 #page-title {
