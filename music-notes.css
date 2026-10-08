@@ -1,9 +1,23 @@
 body {
-  background-color: #f5e8d8;
-  color: #302522;
+  position: relative;
+  isolation: isolate;
+  background-color: rgb(255, 214, 237);
+  color: rgb(73, 23, 0);
   font-family: Arial, sans-serif;
   text-align: center;
   padding: 30px;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("download.png");
+  background-repeat: repeat;
+  background-size: 150px;
+  opacity: 0.05;
+  z-index: -1;
+  pointer-events: none;
 }
 
 #music-space {
@@ -11,14 +25,28 @@ body {
   width: 80%;
   height: 400px;
   margin: 25px auto;
-  background-color: #f7d7d5;
-  border: 2px solid #302522;
+  background-color: rgb(255, 148, 205);
+  border: 2px solid rgb(123, 3, 41);
   border-radius: 16px;
   cursor: crosshair;
 }
+
 .music-note {
   position: absolute;
   transform: translate(-50%, -50%);
   font-size: 40px;
   pointer-events: none;
+}
+
+#song-line {
+  color: rgb(124, 3, 78);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+img {
+  width: 400px;
+  max-width: 90%;
+  border: 10px solid rgb(255, 220, 20);
+  border-radius: 50px;
 }

@@ -1,12 +1,11 @@
 
-h1 { color:blue;}
 body {
-    background-color: rgb(255, 214, 237); 
-    color: rgb(73, 23, 0); 
-    font-family: Arial, sans-serif; 
-} 
+  background-color: rgb(255, 214, 237);
+  color: rgb(73, 23, 0);
+  font-family: Arial, sans-serif;
+}
 
- h1{
+h1 {
   color: rgb(204, 23, 186);
   text-align: center;
 }
@@ -18,7 +17,7 @@ h2 {
 
 p {
   font-size: 20px;
-  line-height: 1.50;
+  line-height: 1.5;
 }
 
 img {
@@ -28,26 +27,80 @@ img {
 }
 
 li {
-  color: rgb(251, 250, 249);
+  color: rgb(132, 0, 57);
   margin: 15px;
 }
 
 div {
-    border: 9px solid rgb(123, 3, 41);
-    margin-bottom: 30px;
-    padding: 60px;
-    background-color: rgb(255, 148, 205);
+  border: 9px solid rgb(123, 3, 41);
+  margin-bottom: 30px;
+  padding: 60px;
+  background-color: rgb(255, 148, 205);
 }
 
 #page-title {
-    color: rgb(204, 23, 186);
-    font-size: 42px;
-    text-align: center;
-    border-bottom: 3px solid rgb(124, 3, 78);
-    padding: 15px;
+  color: rgb(123, 0, 62);
+  font-size: 42px;
+  text-align: center;
+  border-bottom: 3px solid rgb(124, 3, 78);
+  padding: 15px;
 }
+
 .highlight {
-    background-color: rgb(255, 245, 120);
-    color: rgb(124, 3, 78);
-    padding: 10px;
+  color: rgb(124, 3, 78);
+  padding: 10px;
+}
+
+.about-photos {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.about-photos img {
+  width: 450px;
+  height: 250px;
+  object-fit: cover;
+}
+.page-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.page-links a {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: rgb(124, 3, 78);
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+}
+
+.page-links a:hover {
+  background-color: rgb(123, 0, 51);
+}
+
+body {
+  position: relative;
+  background-color: rgb(255, 214, 237);
+  color: rgb(73, 23, 0);
+  font-family: Arial, sans-serif;
+  isolation: isolate;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("download.png");
+  background-repeat: repeat;
+  background-size: 150px;
+  opacity: 0.25;
+  z-index: -1;
+  pointer-events: none;
 }
